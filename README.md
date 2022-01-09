@@ -7,11 +7,11 @@
   ```
 * For M1-chip:
   ```
-    $ make setup-arm64  
+  $ make setup-arm64  
   ```
 * For Intel-chip:
   ```
-    $ make setup-amd64
+  $ make setup-amd64
   ```
 ## Usage
 ### Just run this command
