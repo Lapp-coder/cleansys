@@ -2,10 +2,12 @@
 .SILENT:
 
 setup-arm64:
-	sudo mv ./build/bin/cleansys-arm64 /usr/local/bin/cleansys
+	sudo mkdir -p /usr/local/bin \
+	&& sudo mv ./build/bin/cleansys-arm64 /usr/local/bin/cleansys
 
 setup-amd64:
-	sudo mv ./build/bin/cleansys-amd64 /usr/local/bin/cleansys
+	sudo mkdir -p /usr/local/bin \
+	&& sudo mv ./build/bin/cleansys-amd64 /usr/local/bin/cleansys
 
 build-arm64:
 	GOOS=darwin GOARCH=arm64 go build -o ./build/bin/cleansys-arm64 main.go
